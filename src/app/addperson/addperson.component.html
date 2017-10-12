@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-md-offset-1">
+        <form (ngSubmit)="addNameEntry(nameForm)" #nameForm="ngForm">
+          <div class="form-group">
+            <label for="prodID"></label>
+            <input type="text" id="prodID" class="form-control" name="prodID" ngModel placeholder="Product ID">
+          </div>
+          <div class="form-group">
+            <label for="prodName"></label>
+            <input type="text" id="prodName" class="form-control" name="prodName" ngModel placeHolder="Product Name">
+          </div>
+          <div class="form-group">
+            <label for="prodPic"></label>
+            <input type="text" id="prodPic" class="form-control" name="prodPic" ngModel placeHolder="Product Picture">
+          </div>
+          <div class="form-group">
+            <label for="prodPrice"></label>
+            <input type="text" id="prodPrice" class="form-control" name="prodPrice" ngModel placeHolder="Product Price">
+          </div>
+          <button type="submit" class="btn btn-primary">
+               Save Orders
+          </button>
+        </form> 
+    </div>
+  </div>
+</div>

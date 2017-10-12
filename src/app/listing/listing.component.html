@@ -1,0 +1,41 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Product ID
+      </th>
+      <th>
+        Product Name
+      </th>
+       <th>
+        Product Picture
+      </th>
+      <th>
+        Product Price
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let product of peopleCollection">
+      <td>{{ product.productID }}</td>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.productPicture }}</td>
+      <td>{{ product.productPrice }}</td>
+      <td>
+        <button (click)="modifyData(product.id)" class="btn btn-warning">
+           Edit Orders
+        </button>
+      </td>
+      <td>
+        <a href="https://store-62681.firebaseio.com/people/{{ product.id }}.json">Link</a>
+      </td>
+      <div>
+      <td>
+       <button type="submit" class="btn btn-primary">
+               Total
+          </button>
+      </td>
+      </div>
+    </tr> 
+  </tbody>
+</table>
